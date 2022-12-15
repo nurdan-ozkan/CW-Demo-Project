@@ -6,7 +6,7 @@
   "regions" : [ {
     "components" : [ {
       "componentAttributes" : {
-        "richTextValue" : "<img class='sfdcCbImage' src='/sfsites/c/img/community/cpt/cpt-home-banner.png'             style='width:100%;'/>"
+        "richTextValue" : "<p><img class=\"sfdcCbImage\" alt=\"\" src=\"/sfsites/c/img/community/cpt/cpt-home-banner.png\" style=\"width: 100%;\"></p>"
       },
       "componentName" : "forceCommunity:richTextInline",
       "id" : "de5c0d1d-7f08-4227-b086-43ad6ae259c3",
@@ -23,6 +23,19 @@
     "type" : "region"
   }, {
     "components" : [ {
+      "componentAttributes" : {
+        "actions" : [ {
+          "isPublic" : true,
+          "name" : "NewAccount"
+        } ],
+        "label" : "Contact Us"
+      },
+      "componentName" : "forceCommunity:createRecordButton",
+      "id" : "8bb402cd-d233-4ad9-81d3-0e1ad0e51f76",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
       "componentAttributes" : {
         "flowArguments" : "[{\"label\":\"utm_campaign\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_campaign}\"},{\"label\":\"utm_content\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_content}\"},{\"label\":\"utm_id\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_id}\"},{\"label\":\"utm_medium\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_medium}\"},{\"label\":\"utm_referer\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_referer}\"},{\"label\":\"utm_source\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_source}\"},{\"label\":\"utm_term\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!utm_term}\"}]",
         "flowName" : "Campaign_Lead_Flow"

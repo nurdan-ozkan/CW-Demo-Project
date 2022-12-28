@@ -20,6 +20,7 @@ export default class LandingPageForm extends LightningElement {
 
     advertiseId;
 
+    
     leadRecord = {
         FirstName:'',
         LastName:'',
